@@ -3,8 +3,12 @@ language: java
 jdk:
    - openjdk7
    - oraclejdk7
-   - openjdk6
-   - oraclejdk8
+  # - openjdk6
+  # - oraclejdk8
+   
+before_script:
+   - mkdir -p shippable/testresults
+   - mkdir -p shippable/codecovarage
 
 after_success:
    - mvn clean cobertura:cobertura
