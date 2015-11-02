@@ -20,3 +20,5 @@ notifications:
       
 archive: true
 
+cache: true
+
