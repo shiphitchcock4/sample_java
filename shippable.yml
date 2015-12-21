@@ -6,6 +6,8 @@ jdk:
    - openjdk6
    - oraclejdk8
    
+build_image: drydock/u12jav:tip
+   
 env:
    - FOO=test  
    - TEST=foo
