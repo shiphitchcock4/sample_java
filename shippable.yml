@@ -10,7 +10,7 @@ build_image: drydock/u12jav:tip
    
 env:
    - FOO=test  
-   - TEST=foo
+  # - TEST=foo
    
 before_script:
    - mkdir -p shippable/testresults
@@ -27,4 +27,4 @@ notifications:
       
 archive: true
 
-cache: true
+#cache: true
