@@ -21,8 +21,11 @@ after_success:
 notifications:
    email: 
       varsha@shippable.com
-   irc: "chat.freenode.net#test-irc"
+   irc:
+      pull_requests: true
+         channels:
+            - "chat.freenode.net#test-irc"
       
 archive: true
 
-cache: true
+#cache: true
