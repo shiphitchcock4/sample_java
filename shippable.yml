@@ -2,12 +2,12 @@ language: java
 
 jdk:
    - openjdk7
-   - oraclejdk7
-   - openjdk6
+ #  - oraclejdk7
+#   - openjdk6
    - oraclejdk8
    
 env:
-   - FOO=test  
+  # - FOO=test  
    - TEST=foo
    
 before_script:
