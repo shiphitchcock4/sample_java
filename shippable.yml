@@ -23,7 +23,7 @@ notifications:
       varsha@shippable.com
    irc:
       pull_requests: true
-         channels:
+      channels:
             - "chat.freenode.net#test-irc"
       
 archive: true
