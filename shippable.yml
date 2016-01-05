@@ -6,7 +6,7 @@ jdk:
    - openjdk6
    - oraclejdk8
    
-build_image: drydock/u12jav:tip
+build_image: drydock/u12javpls:tip
 #build_image: shippable/minv2
    
 env:
