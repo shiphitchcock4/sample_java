@@ -15,5 +15,4 @@ build:
       - mkdir -p shippable/testresults
       - mkdir -p shippable/codecovarage
       - mvn clean cobertura:cobertura
-      - mvn test   
-      - timeout 5
+      - mvn test 
