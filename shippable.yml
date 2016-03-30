@@ -10,10 +10,9 @@ env:
   # - FOO=test  
    - TEST=foo
    
-ci:
-   - mkdir -p shippable/testresults
-   - mkdir -p shippable/codecovarage
-
-   after_success:
+build:
+   ci:
+      - mkdir -p shippable/testresults
+      - mkdir -p shippable/codecovarage
       - mvn clean cobertura:cobertura
       - mvn test
