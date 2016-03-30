@@ -10,22 +10,10 @@ env:
   # - FOO=test  
    - TEST=foo
    
-before_script:
+ci:
    - mkdir -p shippable/testresults
    - mkdir -p shippable/codecovarage
 
-after_success:
-   - mvn clean cobertura:cobertura
-   - mvn test
-   
-notifications:
-   email: 
-      varsha@shippable.com
-   irc:
-      pull_requests: true
-      channels:
-            - "chat.freenode.net#test-irc"
-      
-archive: true
-
-#cache: true
+   after_success:
+      - mvn clean cobertura:cobertura
+      - mvn test
