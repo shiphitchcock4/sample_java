@@ -15,4 +15,16 @@ build:
       - mkdir -p shippable/testresults
       - mkdir -p shippable/codecovarage
       - mvn clean cobertura:cobertura
-      - mvn test    
+      - mvn test 
+
+integrations:
+   notifications:
+    - integrationName: email
+      type: email
+      recipients: 
+        - shiphitchcock1@gmail.com
+       # - varsha@shippable.com
+      on_start: ALWAYS
+      on_success: always
+      on_failure: always
+      on_pull_request: always
