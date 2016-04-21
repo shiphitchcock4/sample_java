@@ -22,7 +22,7 @@ integrations:
     - integrationName: email
       type: email
       recipients: 
-        - shiphitchcock1@gmail.com
+        - sreyaj10@gmail.com
        # - varsha@shippable.com
       on_start: ALWAYS
       on_success: always
