@@ -9,7 +9,7 @@ jdk:
 env:
   # - FOO=test  
    - TEST=foo
-   
+     
 build:
    ci:
       - mkdir -p shippable/testresults
